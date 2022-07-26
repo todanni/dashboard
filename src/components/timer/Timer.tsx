@@ -12,8 +12,8 @@ function CircularProgressWithLabel(
 	return (
 		<Box sx={{ position: 'relative', display: 'inline-flex', m: '20px' }}>
 			<CircularProgress
-				size={250}
-				thickness={4}
+				size={500}
+				thickness={2}
 				variant='determinate'
 				{...props}
 			/>

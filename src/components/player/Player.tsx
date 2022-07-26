@@ -42,7 +42,7 @@ export default function Player(props: Song) {
 					<IconButton aria-label='previous'>
 						<SkipPreviousIcon />
 					</IconButton>
-					<IconButton aria-label='play/pause'>
+					<IconButton color='secondary' aria-label='play/pause'>
 						<PlayArrowIcon sx={{ height: 38, width: 38 }} />
 					</IconButton>
 					<IconButton aria-label='next'>

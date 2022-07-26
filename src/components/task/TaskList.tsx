@@ -11,21 +11,25 @@ const tasks = [
 	{
 		index: 0,
 		title: 'Fixing Reactive scaler',
+		project: 'Reactive scaler',
 		completed: false,
 	},
 	{
 		index: 1,
 		title: 'Review Admin Service PRs',
+		project: 'Admin service',
 		completed: false,
 	},
 	{
 		index: 2,
 		title: 'Deploy Policy Agent',
+		project: 'Policy agent',
 		completed: false,
 	},
 	{
 		index: 3,
 		title: 'Write documentation for Quotas service',
+		project: 'Quotas service',
 		completed: false,
 	},
 ];
@@ -45,7 +49,7 @@ export default function TaskList() {
 						<ListItemIcon>
 							<Checkbox edge='start' checked={task.completed} />
 						</ListItemIcon>
-						<ListItemText primary={task.title} />
+						<ListItemText primary={task.title} secondary={task.project} />
 					</ListItem>
 				))}
 			</List>
